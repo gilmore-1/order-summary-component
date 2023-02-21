@@ -1,34 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import {
+  Anual,
+  AnualYear,
+  AnulText,
+  Button,
+  Cancel,
+  Card,
+  Change,
+  H1,
+  Img,
+  Main,
+  Music,
+  P,
+  Section,
+} from "./components/Card";
+import IllustrationHero from "./assets/illustration-hero.svg";
+import MusicIcon from "./assets/icon-music.svg";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Card>
+        <Img src={IllustrationHero} />
+        <Main className="main">
+          <H1>Order Summary</H1>
+          <P>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </P>
+          <Section>
+            <Music src={MusicIcon}></Music>
+            <Anual>
+            <AnulText>Annual Plan</AnulText>
+            <AnualYear>$59.99/year</AnualYear>
+            <Change>Change</Change>
+            </Anual>
+          </Section>
+          <Button>Proceed to Payment</Button>
+          <Cancel>Cancel Order</Cancel>
+        </Main>
+      </Card>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
