@@ -75,6 +75,9 @@ export const Change = styled.a`
 font-size: 14px;
 line-height: 19px;
 color: #382AE1;
+padding-left: 50px;
+cursor: pointer;
+;
 `
 export const Button = styled.button`
   width: 100%;
@@ -91,7 +94,6 @@ export const Cancel = styled.a`
   font-size: 15px;
   line-height: 20px;
   font-weight: 900;
-
   color: #1F2E55;
   margin-top: 32px;
   color: #1F2E55;
