@@ -8,9 +8,6 @@ export const Card = styled.div`
   background: #ffffff;
   box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
   border-radius: 20px;
-  @media only screen and (min-width: 1920px) {
-      width: 1920px;
-  }
   `
 export const Img = styled.img`
   width: 100%;
