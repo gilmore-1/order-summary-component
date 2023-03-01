@@ -89,6 +89,7 @@ export const Button = styled.button`
   font-size: 15px;
   line-height: 20px;
   height: 50px;
+  cursor: pointer;
 `
 export const Cancel = styled.a`
   font-size: 15px;
